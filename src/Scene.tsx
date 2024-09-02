@@ -7,22 +7,16 @@ import { BoxGeometry, Mesh, MeshBasicMaterial } from 'three'
 import { Cube } from './components/Cube'
 import { Plane } from './components/Plane'
 import { Sphere } from './components/Sphere'
+import { LumaSplats } from './components/LumaSplat'
+import { GlassGlobeWithLuma } from './components/GlassGlobe'
 
 function Scene() {
   const { performance } = useControls('Monitoring', {
     performance: false,
   })
 
-  const { animate } = useControls('Cube', {
-    animate: true,
-  })
-
-  const cubeRef = useRef<Mesh<BoxGeometry, MeshBasicMaterial>>(null)
-
-  useFrame((_, delta) => {
-    if (animate) {
-      cubeRef.current!.rotation.y += delta / 3
-    }
+  const { size } = useControls('Cube', {
+    size: 3,
   })
 
   return (
@@ -31,17 +25,10 @@ function Scene() {
 
       <OrbitControls makeDefault />
 
-      <directionalLight
-        position={[-2, 2, 3]}
-        intensity={1.5}
-        castShadow
-        shadow-mapSize={[1024 * 2, 1024 * 2]}
+      <GlassGlobeWithLuma
+        innerGlobeRadius={size}
+        lumaSource='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
       />
-      <ambientLight intensity={0.2} />
-
-      <Cube ref={cubeRef} />
-      <Sphere />
-      <Plane />
     </>
   )
 }
