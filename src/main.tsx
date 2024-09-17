@@ -40,9 +40,11 @@ function Main() {
         // latitude={51} longitude={0}
         dpr={[1, 2]}
         gl={{
-          antialias: true,
+          antialias: false,
+          alpha: true,
           toneMapping: ACESFilmicToneMapping,
           outputColorSpace: SRGBColorSpace,
+          physicallyCorrectLights: true, // Add this line
         }}
         camera={{
           fov: 55,

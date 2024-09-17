@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Mesh, FrontSide, Box3, Vector3 } from 'three'
+import { Mesh, FrontSide, Box3, Vector3, DoubleSide } from 'three'
 
 type GlassGlobeProps = {
   innerGlobeRadius: number
@@ -19,13 +19,13 @@ export const GlassGlobe: React.FC<GlassGlobeProps> = ({ innerGlobeRadius }) => {
       <sphereGeometry args={[1, 32, 32]} />
       <meshPhysicalMaterial
         roughness={0}
-        metalness={0}
-        transmission={1}
+        metalness={0.2}
+        transmission={0.9}
         ior={1.341}
-        thickness={1.52}
+        thickness={0.1}
         envMapIntensity={1.2}
-        clearcoat={1}
-        side={FrontSide}
+        clearcoat={0.1}
+        side={DoubleSide}
         transparent={true}
       />
     </mesh>
@@ -58,11 +58,11 @@ export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
       setRatio(calculatedRatio)
     }
   }, [innerGlobeRadius, lumaSource])
-
+  console.log(lumaSource)
   return (
     <group>
       {/* Glass Globe */}
-      {/* <GlassGlobe innerGlobeRadius={innerGlobeRadius} /> */}
+      <GlassGlobe innerGlobeRadius={innerGlobeRadius} />
 
       {/* Luma Splats inside the globe with calculated scale */}
       <LumaSplats
@@ -72,7 +72,8 @@ export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
           ratio * scaleMultiplier,
           ratio * scaleMultiplier,
         ]}
-        source={lumaSource}
+        // source={lumaSource}
+        source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
       />
     </group>
   )
