@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Mesh, FrontSide, Box3, Vector3, DoubleSide } from 'three'
+import { LumaSplats } from './LumaSplat'
 
 type GlassGlobeProps = {
   innerGlobeRadius: number
@@ -20,28 +21,26 @@ export const GlassGlobe: React.FC<GlassGlobeProps> = ({ innerGlobeRadius }) => {
       <meshPhysicalMaterial
         roughness={0}
         metalness={0.2}
-        transmission={0.9}
-        ior={1.341}
-        thickness={0.1}
+        transmission={0.9} // Controls transparency effect (glass-like refraction)
+        ior={1.341} // Index of refraction for glass (~1.33 for glass)
+        thickness={1.0} // Adjust thickness to make refraction more visible
+        // envMap={envMap} // Add environment map for proper reflections
         envMapIntensity={1.2}
         clearcoat={0.1}
-        side={DoubleSide}
+        side={FrontSide} // Experiment with FrontSide for correct refractions
         transparent={true}
+        depthWrite={false} // Helps prevent z-fighting or depth issues
       />
     </mesh>
   )
 }
 
-import { LumaSplats } from './LumaSplat'
-type GlassGlobeWithLumaProps = {
-  innerGlobeRadius: number
-  lumaSource: string
-  scaleMultiplier?: number
-}
-export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
+const CustomSplat = ({
   innerGlobeRadius,
   lumaSource,
-  scaleMultiplier = 1, // Default multiplier is 1 if not provided
+}: {
+  innerGlobeRadius: Number
+  lumaSource: String
 }) => {
   const lumaRef = useRef<any>(null)
   const [ratio, setRatio] = useState(1)
@@ -58,23 +57,32 @@ export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
       setRatio(calculatedRatio)
     }
   }, [innerGlobeRadius, lumaSource])
+  return (
+    <LumaSplats
+      position={[0, 0, 0]}
+      scale={[ratio, ratio, ratio]}
+      source={lumaSource}
+      // source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
+    />
+  )
+}
+type GlassGlobeWithLumaProps = {
+  innerGlobeRadius: number
+  lumaSource: string
+  scaleMultiplier?: number
+}
+export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
+  innerGlobeRadius,
+  lumaSource,
+  scaleMultiplier = 1, // Default multiplier is 1 if not provided
+}) => {
   console.log(lumaSource)
   return (
     <group>
       {/* Glass Globe */}
       <GlassGlobe innerGlobeRadius={innerGlobeRadius} />
-
+      <CustomSplat innerGlobeRadius={innerGlobeRadius} lumaSource={lumaSource} />
       {/* Luma Splats inside the globe with calculated scale */}
-      <LumaSplats
-        position={[0, 0, 0]}
-        scale={[
-          ratio * scaleMultiplier,
-          ratio * scaleMultiplier,
-          ratio * scaleMultiplier,
-        ]}
-        // source={lumaSource}
-        source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
-      />
     </group>
   )
 }

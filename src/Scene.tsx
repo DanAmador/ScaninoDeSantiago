@@ -4,6 +4,7 @@ import { useControls } from 'leva'
 import { Perf } from 'r3f-perf'
 import { useState } from 'react'
 import { GlassGlobeWithLuma } from './components/GlassGlobe'
+import { LumaSplats } from './components/LumaSplat'
 
 function Scene() {
   const { performance } = useControls('Monitoring', {
@@ -36,7 +37,7 @@ function Scene() {
       {performance && <Perf position='top-left' />}
       <AdaptiveDpr pixelated />
       <OrbitControls makeDefault />
-      <Environment preset='studio' /> {/* Add this line */}
+      <LumaSplats source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517' />
       <GlassGlobeWithLuma
         innerGlobeRadius={size}
         lumaSource={`https://lumalabs.ai/capture/${lumaSources[currentIndex]}`}

@@ -44,7 +44,6 @@ function Main() {
           alpha: true,
           toneMapping: ACESFilmicToneMapping,
           outputColorSpace: SRGBColorSpace,
-          physicallyCorrectLights: true, // Add this line
         }}
         camera={{
           fov: 55,
