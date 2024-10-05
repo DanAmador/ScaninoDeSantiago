@@ -1,4 +1,4 @@
-export const sources: Array<{ id: string, name: string }> = [
+[
     {
         "id": "413220df-5edf-431c-a14e-1d3357a730e6",
         "name": "Nordbad Tree 12.09"

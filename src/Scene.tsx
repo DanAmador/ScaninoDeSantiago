@@ -1,68 +1,53 @@
 // Scene.tsx
-import { AdaptiveDpr, Environment, OrbitControls } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
+import { AdaptiveDpr, OrbitControls } from '@react-three/drei';
 import { useControls } from 'leva';
-import { Perf } from 'r3f-perf';
 import { useState, useEffect } from 'react';
 import { GlassGlobeWithLuma } from './components/GlassGlobe';
-import { LumaSplats } from './components/LumaSplat';
-import { sources, Splat } from "./splats";
+import useSplatData, { SplatDataset } from './useSplatData';
+import { useSplatControls } from './useSplatMetadataControls';
 
 function Scene() {
-  // Leva controls for performance monitoring and cube size
-  const { performance } = useControls('Monitoring', {
-    performance: false,
-  });
 
-  const { size } = useControls('Cube', {
-    size: {
-      value: 3,
-      min: 1,
-      max: 10,
-      step: 0.1,
-    },
-  });
-
-  // State to track the current index of the Luma source
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { splats } = useSplatData();
 
-  // Function to handle cycling to the next Luma source
-  const handleNextLumaSource = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % sources.length);
-  };
 
-  // Event listener for keydown events
+  const [currentSplat, setCurrentSplat] = useState<Partial<SplatDataset> | null>(null);
+
+  useSplatControls(currentSplat, (updatedSplat) => {
+    if (currentSplat) {
+      setCurrentSplat((prevSplat) => ({ ...prevSplat, ...updatedSplat }));
+    }
+  });
+  useEffect(() => {
+    if (splats.length > 0) {
+      setCurrentSplat(splats[currentIndex]);
+    }
+  }, [currentIndex, splats]);
+
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code === 'Space') {
-        event.preventDefault(); // Prevent default space bar behavior (e.g., scrolling)
-        handleNextLumaSource();
+      if (event.code === 'Space' && splats.length > 0) {
+        event.preventDefault();
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % splats.length);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
 
-    // Cleanup event listener on component unmount
+
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
-
-  // Optional: Display the current name for debugging or UI purposes
-  const currentSplat: Splat = sources[currentIndex];
+  }, [splats]);
 
   return (
     <>
-      {performance && <Perf position='top-left' />}
       <AdaptiveDpr pixelated />
       <OrbitControls makeDefault />
 
-      <GlassGlobeWithLuma
-        innerGlobeRadius={size}
-        lumaSource={`https://lumalabs.ai/capture/${currentSplat.id}`}
-      />
-
-
+      {currentSplat && <GlassGlobeWithLuma {...currentSplat} />}
     </>
   );
 }

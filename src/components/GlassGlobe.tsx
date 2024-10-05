@@ -1,19 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Mesh, FrontSide, Box3, Vector3, DoubleSide } from 'three'
 import { LumaSplats } from './LumaSplat'
+import { SplatDataset } from '../useSplatData'
+import { LumaSplatsThree } from '@lumaai/luma-web'
+import { extend, Object3DNode } from '@react-three/fiber'
 
-type GlassGlobeProps = {
-  innerGlobeRadius: number
-}
-
-export const GlassGlobe: React.FC<GlassGlobeProps> = ({ innerGlobeRadius }) => {
+export const GlassGlobe: React.FC = () => {
   const globeRef = useRef<Mesh>(null)
-
-  useEffect(() => {
-    if (globeRef.current) {
-      globeRef.current.scale.setScalar(innerGlobeRadius)
-    }
-  }, [innerGlobeRadius])
 
   return (
     <mesh ref={globeRef}>
@@ -34,53 +27,42 @@ export const GlassGlobe: React.FC<GlassGlobeProps> = ({ innerGlobeRadius }) => {
     </mesh>
   )
 }
+// Make LumaSplatsThree available to R3F
+extend({ LumaSplats: LumaSplatsThree })
+
+// For TypeScript support
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    lumaSplats: Object3DNode<LumaSplatsThree, typeof LumaSplatsThree>
+  }
+}
 
 const CustomSplat = ({
-  innerGlobeRadius,
-  lumaSource,
+  splat,
 }: {
-  innerGlobeRadius: Number
-  lumaSource: String
+  splat: SplatDataset
 }) => {
   const lumaRef = useRef<any>(null)
-  const [ratio, setRatio] = useState(1)
-
-  useEffect(() => {
-    if (lumaRef.current) {
-      const boundingBox = new Box3().setFromObject(lumaRef.current)
-      const size = new Vector3()
-      boundingBox.getSize(size)
-
-      const maxDimension = Math.max(size.x, size.y, size.z)
-      const calculatedRatio = innerGlobeRadius / maxDimension
-
-      setRatio(calculatedRatio)
-    }
-  }, [innerGlobeRadius, lumaSource])
-  return (
-    <LumaSplats
-      position={[0, 0, 0]}
-      scale={[ratio, ratio, ratio]}
-      source={lumaSource}
-    // source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
-    />
-  )
+  const [ratio, setRatio] = useState(splat.ratio)
+  const lumaSplatRef = useRef<LumaSplatsThree>(new LumaSplatsThree())
+  console.log(splat.ratio)
+  return <lumaSplats
+    // semanticsMask={LumaSplatsSemantics.FOREGROUND}
+    ref={lumaSplatRef}
+    // position={position}
+    scale={splat.ratio ?? 1}
+    // rotation={rotation}
+    source={`https://lumalabs.ai/capture/${splat.id}`}
+  />
 }
-type GlassGlobeWithLumaProps = {
-  innerGlobeRadius: number
-  lumaSource: string
-  scaleMultiplier?: number
-}
-export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
-  innerGlobeRadius,
-  lumaSource,
-}) => {
+
+export const GlassGlobeWithLuma: React.FC<SplatDataset> = (
+  splat,
+) => {
   return (
     <group>
-      {/* Glass Globe */}
-      <GlassGlobe innerGlobeRadius={innerGlobeRadius} />
-      <CustomSplat innerGlobeRadius={innerGlobeRadius} lumaSource={lumaSource} />
-      {/* Luma Splats inside the globe with calculated scale */}
+      <GlassGlobe />
+      <CustomSplat splat={splat} />
     </group>
   )
 }

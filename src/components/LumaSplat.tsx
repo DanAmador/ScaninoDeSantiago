@@ -65,9 +65,9 @@ export function LumaSplats({
       <lumaSplats
         // semanticsMask={LumaSplatsSemantics.FOREGROUND}
         ref={lumaSplatRef}
-        position={position}
-        scale={scale}
-        rotation={rotation}
+        // position={position}
+        // scale={scale}
+        // rotation={rotation}
         source={source}
       />
     </>
