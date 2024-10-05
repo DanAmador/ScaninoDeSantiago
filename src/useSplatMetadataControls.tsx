@@ -7,11 +7,18 @@ export const useSplatControls = (
     onSplatChange: (updatedSplat: Partial<SplatDataset>) => void
 ) => {
     // Use Leva controls for ratio, defaulting to 1 if currentSplat is null
-    const { ratio } = useControls('Splat Properties', {
+    const { ratio, scale, offset } = useControls('Splat Properties', {
         ratio: {
             value: currentSplat?.ratio || 50,
             min: .001,
-            max: 100,
+            max: 2,
+            step: 0.001,
+        },
+        offset: { x: 0, y: 0, z: 0 },
+        scale: {
+            value: currentSplat?.scale || 1,
+            min: .01,
+            max: 5,
             step: 0.001,
         },
     });
@@ -21,6 +28,8 @@ export const useSplatControls = (
         if (!onSplatChange) return;
         const updatedSplat: Partial<SplatDataset> = {
             ratio,
+            scale,
+            // offset
         };
         onSplatChange(updatedSplat);
     }, [ratio, onSplatChange]);

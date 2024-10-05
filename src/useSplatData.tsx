@@ -1,6 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 
-export type SplatDataset = { id: string, name: string, ratio: number }
+export type SplatDataset = {
+    clip: { center: [number, number, number]; radius: number; };
+    offset: [number, number, number];
+    scale: number
+    id: string, name: string, ratio: number
+}
 
 
 // Hook to read and update splats.json
