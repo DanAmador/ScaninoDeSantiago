@@ -34,36 +34,36 @@ export function LumaSplats({
 
   const [splatWorld, setPlatWorld] = useState<CubeTexture>()
 
-  useEffect(() => {
-    if (lumaSplatRef.current) {
-      scene.environment = null
-      scene.background = null
-      // // You can enable this if you need to capture the cubemap:
-      void lumaSplatRef.current.captureCubemap(gl).then((cubemap) => {
-        lumaSplatRef.current.material.transparent = false
-      })
+  // useEffect(() => {
+  //   if (lumaSplatRef.current) {
+  //     scene.environment = null
+  //     scene.background = null
+  //     // // You can enable this if you need to capture the cubemap:
+  //     void lumaSplatRef.current.captureCubemap(gl).then((cubemap) => {
+  //       lumaSplatRef.current.material.transparent = false
+  //     })
 
-      // capture environment lighting after load
-      lumaSplatRef.current.onLoad = () => {
-        lumaSplatRef.current.captureCubemap(gl).then((cubemap) => {
-          setPlatWorld(cubemap)
-        })
-      }
-    }
-  }, [gl, scene])
+  //     // capture environment lighting after load
+  //     lumaSplatRef.current.onLoad = () => {
+  //       lumaSplatRef.current.captureCubemap(gl).then((cubemap) => {
+  //         setPlatWorld(cubemap)
+  //       })
+  //     }
+  //   }
+  // }, [gl, scene])
 
-  useEffect(() => {
-    if (!splatWorld) return
-    const { environmentMap } = lumaSplatRef?.current
-    if (scene.environment != environmentMap) {
-      scene.environment = environmentMap
-      scene.background = environmentMap
-    }
-  }, [splatWorld])
+  // useEffect(() => {
+  //   if (!splatWorld) return
+  //   const { environmentMap } = lumaSplatRef?.current
+  //   if (scene.environment != environmentMap) {
+  //     scene.environment = environmentMap
+  //     scene.background = environmentMap
+  //   }
+  // }, [splatWorld])
   return (
     <>
       <lumaSplats
-        semanticsMask={LumaSplatsSemantics.FOREGROUND}
+        // semanticsMask={LumaSplatsSemantics.FOREGROUND}
         ref={lumaSplatRef}
         position={position}
         scale={scale}

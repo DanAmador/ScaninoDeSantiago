@@ -62,7 +62,7 @@ const CustomSplat = ({
       position={[0, 0, 0]}
       scale={[ratio, ratio, ratio]}
       source={lumaSource}
-      // source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
+    // source='https://lumalabs.ai/capture/2f4a6b64-f0bd-4e3e-a41a-c3aec8b96517'
     />
   )
 }
@@ -74,9 +74,7 @@ type GlassGlobeWithLumaProps = {
 export const GlassGlobeWithLuma: React.FC<GlassGlobeWithLumaProps> = ({
   innerGlobeRadius,
   lumaSource,
-  scaleMultiplier = 1, // Default multiplier is 1 if not provided
 }) => {
-  console.log(lumaSource)
   return (
     <group>
       {/* Glass Globe */}
