@@ -1,0 +1,37 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+
+      # Set up Node.js environment to use the correct version
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Set this to your required Node.js version
+
+      # Install dependencies using npm
+      - name: Install dependencies
+        run: npm install
+
+      # Build the project using the vite build command from the package.json
+      - name: Build project
+        run: npm run build
+
+      # Optional: Run tests if any are present
+      # - name: Run tests
+      #   run: npm test
