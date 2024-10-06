@@ -1,17 +1,17 @@
-import React, { useRef, useEffect, useState } from 'react'
-import { Mesh, FrontSide, Box3, Vector3, DoubleSide } from 'three'
+import React, { useRef, useEffect, useState, MutableRefObject } from 'react'
+import { Mesh, FrontSide, Box3, Vector3, DoubleSide, Box3Helper, Object3D } from 'three'
 import { SplatDataset } from '../useSplatData'
 import { LumaSplatsThree } from '@lumaai/luma-web'
-import { extend, Object3DNode } from '@react-three/fiber'
+import { extend, Object3DNode, useFrame } from '@react-three/fiber'
 import { CustomSplat } from "./LumaSplat"
+import { useHelper } from '@react-three/drei'
 
 export const GlassGlobe: React.FC<{ splat: SplatDataset }> = ({ splat }: { splat: SplatDataset }) => {
   const globeRef = useRef<Mesh>(null)
 
-  console.log(splat.scale)
   return (
     <mesh ref={globeRef}>
-      <sphereGeometry args={[splat?.scale ?? 1, 32, 32]} />
+      <sphereGeometry args={[splat?.ratio ?? 1, 32, 32]} />
       <meshPhysicalMaterial
         color={"red"}
         roughness={0}
@@ -34,10 +34,13 @@ export const GlassGlobe: React.FC<{ splat: SplatDataset }> = ({ splat }: { splat
 export const GlassGlobeWithLuma: React.FC<SplatDataset> = (
   splat,
 ) => {
+  const splatRef = useRef<LumaSplatsThree>(null)
+
+
   return (
     <group>
       <GlassGlobe splat={splat} />
-      <CustomSplat splat={splat} />
+      <CustomSplat splat={splat} ref={splatRef} />
     </group>
   )
 }
