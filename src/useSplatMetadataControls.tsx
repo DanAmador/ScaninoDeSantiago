@@ -15,7 +15,9 @@ export const useSplatControls = (
             step: 0.001,
         },
         offset: {
-            value: [0, 0, 0]
+            value: [0, 0, 0],
+            step: 1,
+
         },
         scale: {
             value: currentSplat?.scale || 1,
