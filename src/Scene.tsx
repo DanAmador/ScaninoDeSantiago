@@ -2,7 +2,7 @@
 import { AdaptiveDpr, OrbitControls } from '@react-three/drei';
 import { useControls } from 'leva';
 import { useState, useEffect } from 'react';
-import { GlassGlobeWithLuma } from './components/GlassGlobe';
+import { GlassGlobeWithSpark } from './components/GlassGlobe';
 import useSplatData, { SplatDataset } from './useSplatData';
 import { useSplatControls } from './useSplatMetadataControls';
 
@@ -47,7 +47,7 @@ function Scene() {
       <AdaptiveDpr pixelated />
       <OrbitControls makeDefault />
 
-      {currentSplat && <GlassGlobeWithLuma {...currentSplat} />}
+      {currentSplat && currentSplat.url && <GlassGlobeWithSpark {...currentSplat as SplatDataset} />}
     </>
   );
 }

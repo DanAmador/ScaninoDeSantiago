@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, MutableRefObject } from 'react'
 import { Mesh, FrontSide, Box3, Vector3, DoubleSide, Box3Helper, Object3D } from 'three'
 import { SplatDataset } from '../useSplatData'
-import { LumaSplatsThree } from '@lumaai/luma-web'
+import { SplatMesh } from '@sparkjsdev/spark'
 import { extend, Object3DNode, useFrame } from '@react-three/fiber'
 import { CustomSplat } from "./LumaSplat"
 import { useHelper } from '@react-three/drei'
@@ -31,11 +31,10 @@ export const GlassGlobe: React.FC<{ splat: SplatDataset }> = ({ splat }: { splat
 }
 
 
-export const GlassGlobeWithLuma: React.FC<SplatDataset> = (
+export const GlassGlobeWithSpark: React.FC<SplatDataset> = (
   splat,
 ) => {
-  const splatRef = useRef<LumaSplatsThree>(null)
-
+  const splatRef = useRef<SplatMesh>(null)
 
   return (
     <group>
