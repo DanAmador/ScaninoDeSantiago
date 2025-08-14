@@ -3,8 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 export type SplatDataset = {
     clip: { center: [number, number, number]; radius: number; };
     offset: [number, number, number];
-    scale: number
-    id: string, name: string, ratio: number
+    scale: number;
+    id: string;
+    name: string;
+    ratio: number;
+    url: string; // URL to the .splat, .ply, or .spz file
 }
 
 

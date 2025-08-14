@@ -1,0 +1,20 @@
+[
+    {
+        "id": "413220df-5edf-431c-a14e-1d3357a730e6",
+        "name": "Nordbad Tree 12.09",
+        "url": "https://sparkjs.dev/assets/splats/butterfly.spz",
+        "clip": { "center": [0, 0, 0], "radius": 1 },
+        "offset": [0, 0, 0],
+        "scale": 1,
+        "ratio": 1
+    },
+    {
+        "id": "af89ef4a-fe34-4d98-aaf8-c8add083a835",
+        "name": "Color Grade Drone Test",
+        "url": "https://sparkjs.dev/assets/splats/butterfly.spz",
+        "clip": { "center": [0, 0, 0], "radius": 1 },
+        "offset": [0, 0, 0],
+        "scale": 1,
+        "ratio": 1
+    }
+]
