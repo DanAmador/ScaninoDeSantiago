@@ -1,5 +1,4 @@
 import { Canvas } from '@react-three/fiber'
-import 'maplibre-gl/dist/maplibre-gl.css'
 
 import { Leva } from 'leva'
 import React from 'react'
@@ -7,7 +6,6 @@ import ReactDOM from 'react-dom/client'
 import { ACESFilmicToneMapping, SRGBColorSpace } from 'three'
 import { Scene } from './Scene'
 import './styles/main.css'
-import Map from 'react-map-gl/maplibre'
 // import { Canvas } from "react-three-map/maplibre"
 
 function Main() {

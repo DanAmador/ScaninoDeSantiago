@@ -1,55 +1,87 @@
 // Scene.tsx
-import { AdaptiveDpr, OrbitControls } from '@react-three/drei';
-import { useControls } from 'leva';
-import { useState, useEffect } from 'react';
-import { GlassGlobeWithLuma } from './components/GlassGlobe';
-import useSplatData, { SplatDataset } from './useSplatData';
-import { useSplatControls } from './useSplatMetadataControls';
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { CameraControls } from '@react-three/drei'
+import { useThree, useFrame } from '@react-three/fiber'
+import type { SplatMesh as SparkSplatMesh } from '@sparkjsdev/spark'
 
-function Scene() {
+// spark-catalog.ts
+import { extend, ReactThreeFiber } from '@react-three/fiber'
+import type * as THREE from 'three'
+import {
+  SparkRenderer as SparkRendererClass,
+  SplatLoader,
+  SplatMesh,
+  SplatMesh as SplatMeshClass,
+} from '@sparkjsdev/spark'
+import { Cube } from './components/Cube'
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const { splats } = useSplatData();
+// 1) Register Spark classes in R3F's JSX catalog
+extend({ SparkRenderer: SparkRendererClass, SplatMesh: SplatMeshClass })
 
+// 2) Tell TypeScript about the new intrinsic elements
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      sparkRenderer: ReactThreeFiber.Object3DNode<
+        SparkRendererClass,
+        typeof SparkRendererClass
+      > & { renderer?: THREE.WebGLRenderer } // convenience prop if you don't use args
 
-  const [currentSplat, setCurrentSplat] = useState<Partial<SplatDataset> | null>(null);
-
-  useSplatControls(currentSplat, (updatedSplat) => {
-    if (currentSplat) {
-      setCurrentSplat((prevSplat) => ({ ...prevSplat, ...updatedSplat }));
-    }
-  });
-  useEffect(() => {
-    if (splats.length > 0) {
-      setCurrentSplat(splats[currentIndex]);
-    }
-  }, [currentIndex, splats]);
-
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code === 'Space' && splats.length > 0) {
-        event.preventDefault();
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % splats.length);
+      splatMesh: ReactThreeFiber.Object3DNode<SplatMeshClass, typeof SplatMeshClass> & {
+        url?: string
+        index?: number
       }
-    };
+    }
+  }
+}
+type SplatLocation = {
+  name: string
+  latitude: number
+  longitude: number
+  isVisible: boolean
+}
 
-    window.addEventListener('keydown', handleKeyDown);
+export type ParsedSplat = {
+  name: string
+  date: string
+  location: SplatLocation
+  localUrl: string
+}
 
+function useParsedSplats(): ParsedSplat[] {
+  const [splats, setSplats] = useState<ParsedSplat[]>([])
+  useEffect(() => {
+    fetch('/parsed_splats.json')
+      .then((r) => r.json())
+      .then(setSplats)
+  }, [])
+  return splats
+}
 
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [splats]);
+export function Scene() {
+  const meshRef = useRef<any>(null)
+  const renderer = useThree((state) => state.gl)
+  const sparkRendererArgs = useMemo(() => {
+    return { renderer }
+  }, [renderer])
+
+  useFrame((_, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += 0.5 * delta
+    }
+  })
 
   return (
     <>
-      <AdaptiveDpr pixelated />
-      <OrbitControls makeDefault />
-
-      {currentSplat && <GlassGlobeWithLuma {...currentSplat} />}
+      <CameraControls />
+      <sparkRenderer args={[sparkRendererArgs]}>
+        <group>
+          <splatMesh
+            ref={meshRef}
+            url='https://sparkjs.dev/assets/splats/butterfly.spz'
+          />
+        </group>
+      </sparkRenderer>
     </>
-  );
+  )
 }
-
-export { Scene };

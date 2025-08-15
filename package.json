@@ -6,13 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "splats:compress": "node scripts/compress-all-splats.mjs",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@lumaai/luma-web": "^0.2.2",
     "@react-three/drei": "^9.99.7",
     "@react-three/fiber": "^8.15.19",
+    "@sparkjsdev/spark": "^0.1.8",
     "@types/three": "^0.162.0",
+    "adm-zip": "^0.5.16",
     "express": "^4.21.0",
     "leva": "^0.9.35",
     "mapbox-gl": "^3.5.1",
@@ -26,11 +30,12 @@
     "vite-r3f-ts-template": "file:"
   },
   "devDependencies": {
-    "@types/node": "20.14.9",
+    "@types/node": "^24.3.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "5.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
     "vite": "^5.1.4"
   },
   "prettier": {

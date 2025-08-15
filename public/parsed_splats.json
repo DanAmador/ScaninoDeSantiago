@@ -1,0 +1,1080 @@
+[
+  {
+    "name": "Autumn ride",
+    "date": "2024-11-02T12:54:50.000Z",
+    "location": {
+      "name": "Bergstraße-Odenwald Nature Park",
+      "latitude": 49.844163,
+      "longitude": 8.69297,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Autumn_ride.ply"
+  },
+  {
+    "name": "Nordbad Tree 12.09",
+    "date": "2024-09-12T17:12:36.000Z",
+    "location": {
+      "name": "Gutenbergstraße 11A",
+      "latitude": 49.878087,
+      "longitude": 8.663144,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Nordbad_Tree_12.09.ply"
+  },
+  {
+    "name": "Color Grade Drone Test",
+    "date": "2024-08-31T18:54:12.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Color_Grade_Drone_Test.ply"
+  },
+  {
+    "name": "Drone Nature Test ( No Color grade)",
+    "date": "2024-08-31T17:31:13.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Drone_Nature_Test_(_No_Color_grade).ply"
+  },
+  {
+    "name": "Drone Test ( No color Grade ) ",
+    "date": "2024-08-31T16:05:31.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Drone_Test_(_No_color_Grade_)_.ply"
+  },
+  {
+    "name": "Santiago Cathedral Model",
+    "date": "2024-08-28T08:10:45.000Z",
+    "location": {
+      "name": "Passenger Terminal",
+      "latitude": 42.892043,
+      "longitude": -8.421063,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Santiago_Cathedral_Model.ply"
+  },
+  {
+    "name": "Gallego Boats",
+    "date": "2024-08-27T10:17:46.000Z",
+    "location": {
+      "name": "Ruela da Caramoniña, 16",
+      "latitude": 42.882485,
+      "longitude": -8.539331,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Gallego_Boats.ply"
+  },
+  {
+    "name": "Carts",
+    "date": "2024-08-27T11:29:17.000Z",
+    "location": {
+      "name": "Ruela da Caramoniña, 16",
+      "latitude": 42.883335,
+      "longitude": -8.53882,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Carts.ply"
+  },
+  {
+    "name": "Facistol",
+    "date": "2024-08-27T11:17:56.000Z",
+    "location": {
+      "name": "Rúa Costa de San Domingos, 3",
+      "latitude": 42.882712,
+      "longitude": -8.53868,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Facistol.ply"
+  },
+  {
+    "name": "Baskets",
+    "date": "2024-08-27T10:33:58.000Z",
+    "location": {
+      "name": "Ruela da Caramoniña, 16",
+      "latitude": 42.8831,
+      "longitude": -8.538701,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Baskets.ply"
+  },
+  {
+    "name": "Galician Spring Costumes",
+    "date": "2024-08-27T10:46:31.000Z",
+    "location": {
+      "name": "Ruela da Caramoniña, 16",
+      "latitude": 42.8832,
+      "longitude": -8.53877,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Galician_Spring_Costumes.ply"
+  },
+  {
+    "name": "Random Muxia Plaza",
+    "date": "2024-08-25T14:13:40.000Z",
+    "location": {
+      "name": "Rúa Real, 28",
+      "latitude": 43.104416,
+      "longitude": -9.217178,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Random_Muxia_Plaza.ply"
+  },
+  {
+    "name": "Muxia Albergue Rooftop",
+    "date": "2024-08-25T17:54:18.000Z",
+    "location": {
+      "name": "Calle de José María del Río, 34",
+      "latitude": 43.104874,
+      "longitude": -9.217944,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Muxia_Albergue_Rooftop.ply"
+  },
+  {
+    "name": "Sports Car",
+    "date": "2024-08-25T06:58:42.000Z",
+    "location": {
+      "name": "",
+      "latitude": 43.002057,
+      "longitude": -9.241192,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Sports_Car.ply"
+  },
+  {
+    "name": "As Eiras Pilgrim Statue",
+    "date": "2024-08-25T06:03:45.000Z",
+    "location": {
+      "name": "Lires, 82",
+      "latitude": 42.998147,
+      "longitude": -9.243239,
+      "isVisible": true
+    },
+    "localUrl": "./splats/As_Eiras_Pilgrim_Statue.ply"
+  },
+  {
+    "name": "Postcard Alley",
+    "date": "2024-08-24T09:49:22.000Z",
+    "location": {
+      "name": "Lugar Rial, 22",
+      "latitude": 42.952473,
+      "longitude": -9.261389,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Postcard_Alley.ply"
+  },
+  {
+    "name": "Lires Tractor Lookout",
+    "date": "2024-08-24T17:41:55.000Z",
+    "location": {
+      "name": "Lires, 45",
+      "latitude": 42.998722,
+      "longitude": -9.244088,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Lires_Tractor_Lookout.ply"
+  },
+  {
+    "name": "Weirdest fucking shower ever ",
+    "date": "2024-08-24T17:49:41.000Z",
+    "location": {
+      "name": "Lires, 82",
+      "latitude": 42.998057,
+      "longitude": -9.24313,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Weirdest_fucking_shower_ever_.ply"
+  },
+  {
+    "name": "Alley Way",
+    "date": "2024-08-23T10:16:57.000Z",
+    "location": {
+      "name": "Praza Constitución, 47",
+      "latitude": 42.906137,
+      "longitude": -9.262786,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Alley_Way.ply"
+  },
+  {
+    "name": "Fisterra Beach",
+    "date": "2024-08-23T09:35:43.000Z",
+    "location": {
+      "name": "Rúa Cruz de Baixar, 1–9",
+      "latitude": 42.913119,
+      "longitude": -9.264153,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fisterra_Beach.ply"
+  },
+  {
+    "name": "Fisterra Roundabout",
+    "date": "2024-08-22T18:21:11.000Z",
+    "location": {
+      "name": "Porto de Fisterra",
+      "latitude": 42.907963,
+      "longitude": -9.262498,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fisterra_Roundabout.ply"
+  },
+  {
+    "name": "Fisterra Ancla",
+    "date": "2024-08-22T18:34:39.000Z",
+    "location": {
+      "name": "Paseo da Ribeira, 43",
+      "latitude": 42.906522,
+      "longitude": -9.26218,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fisterra_Ancla.ply"
+  },
+  {
+    "name": "The pilgrim ",
+    "date": "2024-08-22T09:55:43.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.893952,
+      "longitude": -9.264358,
+      "isVisible": true
+    },
+    "localUrl": "./splats/The_pilgrim_.ply"
+  },
+  {
+    "name": "Plaza 8 de Marzo Día de Muller",
+    "date": "2024-08-22T04:40:16.000Z",
+    "location": {
+      "name": "Calle de Domingo Antonio de Andrade, 8–10",
+      "latitude": 42.956057,
+      "longitude": -9.19032,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Plaza_8_de_Marzo_Día_de_Muller.ply"
+  },
+  {
+    "name": "Fisterra Way Sunrise",
+    "date": "2024-08-22T07:06:22.000Z",
+    "location": {
+      "name": "Rúa de Fisterra, 62",
+      "latitude": 42.939531,
+      "longitude": -9.237495,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fisterra_Way_Sunrise.ply"
+  },
+  {
+    "name": "Giuseppe Stand",
+    "date": "2024-08-22T07:59:35.000Z",
+    "location": {
+      "name": "AC-445, 32–98",
+      "latitude": 42.926528,
+      "longitude": -9.249821,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Giuseppe_Stand.ply"
+  },
+  {
+    "name": "Os Defensores das Liberdades",
+    "date": "2024-08-21T14:14:36.000Z",
+    "location": {
+      "name": "Avenida Don Lino Rodríguez Madero, 23",
+      "latitude": 42.954301,
+      "longitude": -9.189565,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Os_Defensores_das_Liberdades.ply"
+  },
+  {
+    "name": "Conch necklace obelisk ",
+    "date": "2024-08-21T06:23:30.000Z",
+    "location": {
+      "name": "DP-3404",
+      "latitude": 42.985456,
+      "longitude": -9.083034,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Conch_necklace_obelisk_.ply"
+  },
+  {
+    "name": "Cruceiro Da Armada",
+    "date": "2024-08-21T09:14:56.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.961449,
+      "longitude": -9.176557,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Cruceiro_Da_Armada.ply"
+  },
+  {
+    "name": "Vákner",
+    "date": "2024-08-21T07:05:06.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.985451,
+      "longitude": -9.112718,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Vákner.ply"
+  },
+  {
+    "name": "Cee no Camino ",
+    "date": "2024-08-21T11:37:32.000Z",
+    "location": {
+      "name": "Praza Constitución, 37",
+      "latitude": 42.955097,
+      "longitude": -9.188883,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Cee_no_Camino_.ply"
+  },
+  {
+    "name": "Caravana de Lys",
+    "date": "2024-08-21T07:42:25.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.980119,
+      "longitude": -9.127118,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Caravana_de_Lys.ply"
+  },
+  {
+    "name": "Abandoned House",
+    "date": "2024-08-20T08:34:39.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.942998,
+      "longitude": -8.84955,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Abandoned_House.ply"
+  },
+  {
+    "name": "Vending Machine of Hope",
+    "date": "2024-08-20T09:33:15.000Z",
+    "location": {
+      "name": "Lugar Cornado, 1",
+      "latitude": 42.956541,
+      "longitude": -8.861245,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Vending_Machine_of_Hope.ply"
+  },
+  {
+    "name": "Stone House",
+    "date": "2024-08-20T10:45:08.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.962812,
+      "longitude": -8.911428,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Stone_House.ply"
+  },
+  {
+    "name": "Corzon Grave",
+    "date": "2024-08-20T13:52:59.000Z",
+    "location": {
+      "name": "La Coruña",
+      "latitude": 42.961111,
+      "longitude": -9.003261,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Corzon_Grave.ply"
+  },
+  {
+    "name": "Negreira",
+    "date": "2024-08-19T13:41:37.000Z",
+    "location": {
+      "name": "Avenida de Santiago, 27",
+      "latitude": 42.909924,
+      "longitude": -8.734015,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Negreira.ply"
+  },
+  {
+    "name": "Goal Obelisk",
+    "date": "2024-08-19T06:27:05.000Z",
+    "location": {
+      "name": "Rúa Assegador Torres No Arrabal, 89–99",
+      "latitude": 42.88083,
+      "longitude": -8.603352,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Goal_Obelisk.ply"
+  },
+  {
+    "name": "Heavy Water Stone Bridge",
+    "date": "2024-08-19T08:25:53.000Z",
+    "location": {
+      "name": "Calle Augapesada, 15",
+      "latitude": 42.889374,
+      "longitude": -8.650517,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Heavy_Water_Stone_Bridge.ply"
+  },
+  {
+    "name": "Cathedral Santiago Side",
+    "date": "2024-08-18T07:33:19.000Z",
+    "location": {
+      "name": "Arco de Palacio",
+      "latitude": 42.88108,
+      "longitude": -8.544755,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Cathedral_Santiago_Side.ply"
+  },
+  {
+    "name": "Caga Tío ",
+    "date": "2024-08-17T08:07:23.000Z",
+    "location": {
+      "name": "Rúa da Ponte Vella de Arriba, 2",
+      "latitude": 42.866019,
+      "longitude": -8.573557,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Caga_Tío_.ply"
+  },
+  {
+    "name": "Sanatorio Psiquaitrico",
+    "date": "2024-08-17T08:37:08.000Z",
+    "location": {
+      "name": "Rúa de Sánchez Freire, 128",
+      "latitude": 42.863452,
+      "longitude": -8.556053,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Sanatorio_Psiquaitrico.ply"
+  },
+  {
+    "name": "Compostela stairs ",
+    "date": "2024-08-17T11:33:48.000Z",
+    "location": {
+      "name": "Rúa das Carretas, 36",
+      "latitude": 42.881991,
+      "longitude": -8.546744,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Compostela_stairs_.ply"
+  },
+  {
+    "name": "Padron Church",
+    "date": "2024-08-15T17:06:09.000Z",
+    "location": {
+      "name": "Convento del Carmen",
+      "latitude": 42.738934,
+      "longitude": -8.663168,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Padron_Church.ply"
+  },
+  {
+    "name": "Pontesures",
+    "date": "2024-08-15T08:16:24.000Z",
+    "location": {
+      "name": "Camino Infesta, 3–5",
+      "latitude": 42.721762,
+      "longitude": -8.649935,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Pontesures.ply"
+  },
+  {
+    "name": "Pilgrim Statue",
+    "date": "2024-08-14T18:49:17.000Z",
+    "location": {
+      "name": "Plaza de Martín Herrera, 5",
+      "latitude": 42.603863,
+      "longitude": -8.643285,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Pilgrim_Statue.ply"
+  },
+  {
+    "name": "Padron Square ",
+    "date": "2024-08-15T09:36:00.000Z",
+    "location": {
+      "name": "Praza de Macías, 10",
+      "latitude": 42.738123,
+      "longitude": -8.66089,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Padron_Square_.ply"
+  },
+  {
+    "name": "Pontevedra Fountain",
+    "date": "2024-08-14T04:57:25.000Z",
+    "location": {
+      "name": "Praza de Curros Enríquez, 3",
+      "latitude": 42.432073,
+      "longitude": -8.645078,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Pontevedra_Fountain.ply"
+  },
+  {
+    "name": "Wooden Statues",
+    "date": "2024-08-14T07:59:45.000Z",
+    "location": {
+      "name": "Plaza Caeiro",
+      "latitude": 42.510742,
+      "longitude": -8.649509,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Wooden_Statues.ply"
+  },
+  {
+    "name": "Albergue Pontevedra",
+    "date": "2024-08-13T18:16:13.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Albergue_Pontevedra.ply"
+  },
+  {
+    "name": "Memorial",
+    "date": "2024-08-13T07:13:44.000Z",
+    "location": {
+      "name": "Camiño da Tomada, 9",
+      "latitude": 42.316662,
+      "longitude": -8.607489,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Memorial.ply"
+  },
+  {
+    "name": "Horsey",
+    "date": "2024-08-11T16:15:17.000Z",
+    "location": {
+      "name": "Avenida de la Concordia, 4",
+      "latitude": 42.050047,
+      "longitude": -8.643386,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Horsey.ply"
+  },
+  {
+    "name": "Jalopi ",
+    "date": "2024-08-11T06:44:06.000Z",
+    "location": {
+      "name": "Caminho da Rabada 140",
+      "latitude": 41.902047,
+      "longitude": -8.801498,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Jalopi_.ply"
+  },
+  {
+    "name": "Piedras do Caminho",
+    "date": "2024-08-11T14:59:32.000Z",
+    "location": {
+      "name": "Fortaleza de Valença",
+      "latitude": 42.026517,
+      "longitude": -8.646369,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Piedras_do_Caminho.ply"
+  },
+  {
+    "name": "Fountain Roundabout",
+    "date": "2024-08-11T08:22:01.000Z",
+    "location": {
+      "name": "Estrada de São Pedro 594",
+      "latitude": 41.916634,
+      "longitude": -8.760039,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fountain_Roundabout.ply"
+  },
+  {
+    "name": "Salvation outpost ",
+    "date": "2024-08-08T16:45:49.000Z",
+    "location": {
+      "name": "Rua do Monte 36",
+      "latitude": 41.628995,
+      "longitude": -8.781152,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Salvation_outpost_.ply"
+  },
+  {
+    "name": "Fisherman Caminha",
+    "date": "2024-08-10T13:36:14.000Z",
+    "location": {
+      "name": "Calçada da Escola 11",
+      "latitude": 41.874172,
+      "longitude": -8.840359,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fisherman_Caminha.ply"
+  },
+  {
+    "name": "Brunnen ",
+    "date": "2024-08-09T07:43:37.000Z",
+    "location": {
+      "name": "Avenida da Estrada Real 200–398",
+      "latitude": 41.670074,
+      "longitude": -8.796052,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Brunnen_.ply"
+  },
+  {
+    "name": "Memory Grave",
+    "date": "2024-08-08T13:49:35.000Z",
+    "location": {
+      "name": "Norte",
+      "latitude": 41.611638,
+      "longitude": -8.782017,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Memory_Grave.ply"
+  },
+  {
+    "name": "Che Gue-bar-a",
+    "date": "2024-08-08T11:37:55.000Z",
+    "location": {
+      "name": "N 13 218",
+      "latitude": 41.584018,
+      "longitude": -8.787865,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Che_Gue-bar-a.ply"
+  },
+  {
+    "name": "Tememos",
+    "date": "2024-08-08T09:34:28.000Z",
+    "location": {
+      "name": "Rua do Farol 2–98",
+      "latitude": 41.543721,
+      "longitude": -8.791096,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Tememos.ply"
+  },
+  {
+    "name": "Miguel Conch Tree",
+    "date": "2024-08-08T07:14:07.000Z",
+    "location": {
+      "name": "Parque Natural do Litoral Norte",
+      "latitude": 41.49874,
+      "longitude": -8.766686,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Miguel_Conch_Tree.ply"
+  },
+  {
+    "name": "Porto ángel ",
+    "date": "2024-08-06T07:01:35.000Z",
+    "location": {
+      "name": "Rua de Sobreiras 472–576",
+      "latitude": 41.14671,
+      "longitude": -8.658026,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Porto_ángel_.ply"
+  },
+  {
+    "name": "Fiddler",
+    "date": "2024-08-07T10:18:46.000Z",
+    "location": {
+      "name": "Avenida dos Banhos",
+      "latitude": 41.37864,
+      "longitude": -8.767694,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fiddler.ply"
+  },
+  {
+    "name": "Caxinas Brunnen",
+    "date": "2024-08-07T08:07:27.000Z",
+    "location": {
+      "name": "Avenida Dr Carlos Pinto Ferreira 10",
+      "latitude": 41.358996,
+      "longitude": -8.755635,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Caxinas_Brunnen.ply"
+  },
+  {
+    "name": "Scare crow ",
+    "date": "2024-08-06T12:46:22.000Z",
+    "location": {
+      "name": "Paisagem Protegida Regional do Litoral de Vila do Conde e Reserva Ornitológica de Mindelo",
+      "latitude": 41.288732,
+      "longitude": -8.732053,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Scare_crow_.ply"
+  },
+  {
+    "name": "Villa Cha",
+    "date": "2024-08-06T13:24:35.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Villa_Cha.ply"
+  },
+  {
+    "name": "Dunguaire Castle",
+    "date": "2024-07-30T19:00:14.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Dunguaire_Castle.ply"
+  },
+  {
+    "name": "Utah Teapot",
+    "date": "2024-07-26T17:04:47.000Z",
+    "location": {
+      "name": "1A Mark's Alley W",
+      "latitude": 53.339946,
+      "longitude": -6.274311,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Utah_Teapot.ply"
+  },
+  {
+    "name": "Bear Statue",
+    "date": "2024-07-26T11:28:25.000Z",
+    "location": {
+      "name": "Marine Road",
+      "latitude": 53.147765,
+      "longitude": -6.060603,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Bear_Statue.ply"
+  },
+  {
+    "name": "Edgar",
+    "date": "2024-07-26T15:17:24.000Z",
+    "location": {
+      "name": "Bray Seafront Playground",
+      "latitude": 53.198427,
+      "longitude": -6.09509,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Edgar.ply"
+  },
+  {
+    "name": "Jaz",
+    "date": "2024-07-26T16:29:29.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Jaz.ply"
+  },
+  {
+    "name": "Oscar Wilde ",
+    "date": "2024-07-25T16:14:25.000Z",
+    "location": {
+      "name": "Merrion Square Park",
+      "latitude": 53.340876,
+      "longitude": -6.250421,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Oscar_Wilde_.ply"
+  },
+  {
+    "name": "Turn table ",
+    "date": "2024-07-25T13:11:37.000Z",
+    "location": {
+      "name": "National Museum of Ireland",
+      "latitude": 53.3405,
+      "longitude": -6.2551,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Turn_table_.ply"
+  },
+  {
+    "name": "Bog Jaz",
+    "date": "2024-07-25T11:33:33.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Bog_Jaz.ply"
+  },
+  {
+    "name": "Chilling Video",
+    "date": "2024-07-24T16:52:16.000Z",
+    "location": {
+      "name": "Phoenix Park",
+      "latitude": 53.3544,
+      "longitude": -6.3227,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Chilling_Video.ply"
+  },
+  {
+    "name": "Popes Cross",
+    "date": "2024-07-24T16:12:06.000Z",
+    "location": {
+      "name": "143 Walkinstown Park",
+      "latitude": 53.320003,
+      "longitude": -6.339821,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Popes_Cross.ply"
+  },
+  {
+    "name": "Chilling in the woods",
+    "date": "2024-07-24T16:40:04.000Z",
+    "location": {
+      "name": "1A Mark's Alley W",
+      "latitude": 53.33997,
+      "longitude": -6.274399,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Chilling_in_the_woods.ply"
+  },
+  {
+    "name": "Water Castle Drone Test",
+    "date": "2024-07-22T09:37:36.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Water_Castle_Drone_Test.ply"
+  },
+  {
+    "name": "Castle With Selfie",
+    "date": "2024-07-22T08:48:57.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Castle_With_Selfie.ply"
+  },
+  {
+    "name": "Turn Table 2 ",
+    "date": "2024-07-14T20:22:21.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Turn_Table_2_.ply"
+  },
+  {
+    "name": "Turn Table 1 ",
+    "date": "2024-07-14T20:20:08.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Turn_Table_1_.ply"
+  },
+  {
+    "name": "Ludwigsturm",
+    "date": "2024-07-12T18:24:48.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Ludwigsturm.ply"
+  },
+  {
+    "name": "Žanito Haus",
+    "date": "2024-07-06T18:58:57.000Z",
+    "location": {
+      "name": "Gutenbergstraße 11A",
+      "latitude": 49.878108,
+      "longitude": 8.663158,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Žanito_Haus.ply"
+  },
+  {
+    "name": "Reduced Frames Drone Test",
+    "date": "2024-07-03T18:30:12.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Reduced_Frames_Drone_Test.ply"
+  },
+  {
+    "name": "Splat  Drone Mp4",
+    "date": "2024-07-01T18:55:20.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Splat_Drone_Mp4.ply"
+  },
+  {
+    "name": "Police car",
+    "date": "2024-06-22T16:32:50.000Z",
+    "location": {
+      "name": "Seeheimer Straße 14",
+      "latitude": 49.7563,
+      "longitude": 8.6417,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Police_car.ply"
+  },
+  {
+    "name": "Cursed bike ",
+    "date": "2024-06-22T14:55:46.000Z",
+    "location": {
+      "name": "Marktstraße 17",
+      "latitude": 49.6425,
+      "longitude": 8.643,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Cursed_bike_.ply"
+  },
+  {
+    "name": "Kessel",
+    "date": "2024-04-26T13:57:48.000Z",
+    "location": {
+      "name": "Heinheimer Straße 15",
+      "latitude": 49.878,
+      "longitude": 8.6613,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Kessel.ply"
+  },
+  {
+    "name": "Nord Teich",
+    "date": "2024-03-31T18:01:47.000Z",
+    "location": {
+      "name": "Bürgerpark Nord",
+      "latitude": 49.8889,
+      "longitude": 8.6661,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Nord_Teich.ply"
+  },
+  {
+    "name": "Matze ",
+    "date": "2024-01-27T23:43:41.000Z",
+    "location": {
+      "name": "Soderstraße 29",
+      "latitude": 49.8707,
+      "longitude": 8.6619,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Matze_.ply"
+  },
+  {
+    "name": "Tip",
+    "date": "2024-01-27T21:32:51.000Z",
+    "location": {
+      "name": "Pädagogstraße 5",
+      "latitude": 49.8708,
+      "longitude": 8.6574,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Tip.ply"
+  },
+  {
+    "name": "Videagog",
+    "date": "2024-01-27T21:32:51.000Z",
+    "location": {
+      "name": "Pädagogstraße 5",
+      "latitude": 49.8708,
+      "longitude": 8.6574,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Videagog.ply"
+  },
+  {
+    "name": "Pädagog",
+    "date": "2024-01-27T18:37:19.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Pädagog.ply"
+  },
+  {
+    "name": "Fountain video ",
+    "date": "2024-01-03T12:55:52.000Z",
+    "location": {
+      "name": "Würthweg 7",
+      "latitude": 49.8723,
+      "longitude": 8.6581,
+      "isVisible": true
+    },
+    "localUrl": "./splats/Fountain_video_.ply"
+  },
+  {
+    "name": "Fountain 2",
+    "date": "2024-01-03T13:02:23.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Fountain_2.ply"
+  },
+  {
+    "name": "Fountain #1",
+    "date": "2024-01-03T12:57:02.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Fountain_#1.ply"
+  },
+  {
+    "name": "Iinvisicube 7 ( Bigger  bigger scale) ",
+    "date": "2023-12-28T12:49:01.000Z",
+    "location": {
+      "name": "",
+      "latitude": 0,
+      "longitude": 0,
+      "isVisible": false
+    },
+    "localUrl": "./splats/Iinvisicube_7_(_Bigger_bigger_scale)_.ply"
+  }
+]
