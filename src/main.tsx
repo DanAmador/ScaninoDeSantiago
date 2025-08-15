@@ -7,7 +7,7 @@ import { ACESFilmicToneMapping, SRGBColorSpace } from 'three'
 import { Scene } from './Scene'
 import './styles/main.css'
 // import { Canvas } from "react-three-map/maplibre"
-
+import './spark-catalog' // side-effect: extend() runs
 function Main() {
   return (
     <div className='main'>

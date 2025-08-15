@@ -8,7 +8,7 @@
       "longitude": 8.69297,
       "isVisible": true
     },
-    "localUrl": "./splats/Autumn_ride.ply"
+    "localUrl": "./splats/Autumn_ride.spz"
   },
   {
     "name": "Nordbad Tree 12.09",
@@ -19,7 +19,7 @@
       "longitude": 8.663144,
       "isVisible": true
     },
-    "localUrl": "./splats/Nordbad_Tree_12.09.ply"
+    "localUrl": "./splats/Nordbad_Tree_12.09.spz"
   },
   {
     "name": "Color Grade Drone Test",
@@ -30,7 +30,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Color_Grade_Drone_Test.ply"
+    "localUrl": "./splats/Color_Grade_Drone_Test.spz"
   },
   {
     "name": "Drone Nature Test ( No Color grade)",
@@ -41,7 +41,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Drone_Nature_Test_(_No_Color_grade).ply"
+    "localUrl": "./splats/Drone_Nature_Test_(_No_Color_grade).spz"
   },
   {
     "name": "Drone Test ( No color Grade ) ",
@@ -52,7 +52,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Drone_Test_(_No_color_Grade_)_.ply"
+    "localUrl": "./splats/Drone_Test_(_No_color_Grade_)_.spz"
   },
   {
     "name": "Santiago Cathedral Model",
@@ -63,7 +63,7 @@
       "longitude": -8.421063,
       "isVisible": true
     },
-    "localUrl": "./splats/Santiago_Cathedral_Model.ply"
+    "localUrl": "./splats/Santiago_Cathedral_Model.spz"
   },
   {
     "name": "Gallego Boats",
@@ -74,7 +74,7 @@
       "longitude": -8.539331,
       "isVisible": true
     },
-    "localUrl": "./splats/Gallego_Boats.ply"
+    "localUrl": "./splats/Gallego_Boats.spz"
   },
   {
     "name": "Carts",
@@ -85,7 +85,7 @@
       "longitude": -8.53882,
       "isVisible": true
     },
-    "localUrl": "./splats/Carts.ply"
+    "localUrl": "./splats/Carts.spz"
   },
   {
     "name": "Facistol",
@@ -96,7 +96,7 @@
       "longitude": -8.53868,
       "isVisible": true
     },
-    "localUrl": "./splats/Facistol.ply"
+    "localUrl": "./splats/Facistol.spz"
   },
   {
     "name": "Baskets",
@@ -107,7 +107,7 @@
       "longitude": -8.538701,
       "isVisible": true
     },
-    "localUrl": "./splats/Baskets.ply"
+    "localUrl": "./splats/Baskets.spz"
   },
   {
     "name": "Galician Spring Costumes",
@@ -118,7 +118,7 @@
       "longitude": -8.53877,
       "isVisible": true
     },
-    "localUrl": "./splats/Galician_Spring_Costumes.ply"
+    "localUrl": "./splats/Galician_Spring_Costumes.spz"
   },
   {
     "name": "Random Muxia Plaza",
@@ -129,7 +129,7 @@
       "longitude": -9.217178,
       "isVisible": true
     },
-    "localUrl": "./splats/Random_Muxia_Plaza.ply"
+    "localUrl": "./splats/Random_Muxia_Plaza.spz"
   },
   {
     "name": "Muxia Albergue Rooftop",
@@ -140,7 +140,7 @@
       "longitude": -9.217944,
       "isVisible": true
     },
-    "localUrl": "./splats/Muxia_Albergue_Rooftop.ply"
+    "localUrl": "./splats/Muxia_Albergue_Rooftop.spz"
   },
   {
     "name": "Sports Car",
@@ -151,7 +151,7 @@
       "longitude": -9.241192,
       "isVisible": true
     },
-    "localUrl": "./splats/Sports_Car.ply"
+    "localUrl": "./splats/Sports_Car.spz"
   },
   {
     "name": "As Eiras Pilgrim Statue",
@@ -162,7 +162,7 @@
       "longitude": -9.243239,
       "isVisible": true
     },
-    "localUrl": "./splats/As_Eiras_Pilgrim_Statue.ply"
+    "localUrl": "./splats/As_Eiras_Pilgrim_Statue.spz"
   },
   {
     "name": "Postcard Alley",
@@ -173,7 +173,7 @@
       "longitude": -9.261389,
       "isVisible": true
     },
-    "localUrl": "./splats/Postcard_Alley.ply"
+    "localUrl": "./splats/Postcard_Alley.spz"
   },
   {
     "name": "Lires Tractor Lookout",
@@ -184,7 +184,7 @@
       "longitude": -9.244088,
       "isVisible": true
     },
-    "localUrl": "./splats/Lires_Tractor_Lookout.ply"
+    "localUrl": "./splats/Lires_Tractor_Lookout.spz"
   },
   {
     "name": "Weirdest fucking shower ever ",
@@ -195,7 +195,7 @@
       "longitude": -9.24313,
       "isVisible": true
     },
-    "localUrl": "./splats/Weirdest_fucking_shower_ever_.ply"
+    "localUrl": "./splats/Weirdest_fucking_shower_ever_.spz"
   },
   {
     "name": "Alley Way",
@@ -206,7 +206,7 @@
       "longitude": -9.262786,
       "isVisible": true
     },
-    "localUrl": "./splats/Alley_Way.ply"
+    "localUrl": "./splats/Alley_Way.spz"
   },
   {
     "name": "Fisterra Beach",
@@ -217,7 +217,7 @@
       "longitude": -9.264153,
       "isVisible": true
     },
-    "localUrl": "./splats/Fisterra_Beach.ply"
+    "localUrl": "./splats/Fisterra_Beach.spz"
   },
   {
     "name": "Fisterra Roundabout",
@@ -228,7 +228,7 @@
       "longitude": -9.262498,
       "isVisible": true
     },
-    "localUrl": "./splats/Fisterra_Roundabout.ply"
+    "localUrl": "./splats/Fisterra_Roundabout.spz"
   },
   {
     "name": "Fisterra Ancla",
@@ -239,7 +239,7 @@
       "longitude": -9.26218,
       "isVisible": true
     },
-    "localUrl": "./splats/Fisterra_Ancla.ply"
+    "localUrl": "./splats/Fisterra_Ancla.spz"
   },
   {
     "name": "The pilgrim ",
@@ -250,7 +250,7 @@
       "longitude": -9.264358,
       "isVisible": true
     },
-    "localUrl": "./splats/The_pilgrim_.ply"
+    "localUrl": "./splats/The_pilgrim_.spz"
   },
   {
     "name": "Plaza 8 de Marzo Día de Muller",
@@ -261,7 +261,7 @@
       "longitude": -9.19032,
       "isVisible": true
     },
-    "localUrl": "./splats/Plaza_8_de_Marzo_Día_de_Muller.ply"
+    "localUrl": "./splats/Plaza_8_de_Marzo_Día_de_Muller.spz"
   },
   {
     "name": "Fisterra Way Sunrise",
@@ -272,7 +272,7 @@
       "longitude": -9.237495,
       "isVisible": true
     },
-    "localUrl": "./splats/Fisterra_Way_Sunrise.ply"
+    "localUrl": "./splats/Fisterra_Way_Sunrise.spz"
   },
   {
     "name": "Giuseppe Stand",
@@ -283,7 +283,7 @@
       "longitude": -9.249821,
       "isVisible": true
     },
-    "localUrl": "./splats/Giuseppe_Stand.ply"
+    "localUrl": "./splats/Giuseppe_Stand.spz"
   },
   {
     "name": "Os Defensores das Liberdades",
@@ -294,7 +294,7 @@
       "longitude": -9.189565,
       "isVisible": true
     },
-    "localUrl": "./splats/Os_Defensores_das_Liberdades.ply"
+    "localUrl": "./splats/Os_Defensores_das_Liberdades.spz"
   },
   {
     "name": "Conch necklace obelisk ",
@@ -305,7 +305,7 @@
       "longitude": -9.083034,
       "isVisible": true
     },
-    "localUrl": "./splats/Conch_necklace_obelisk_.ply"
+    "localUrl": "./splats/Conch_necklace_obelisk_.spz"
   },
   {
     "name": "Cruceiro Da Armada",
@@ -316,7 +316,7 @@
       "longitude": -9.176557,
       "isVisible": true
     },
-    "localUrl": "./splats/Cruceiro_Da_Armada.ply"
+    "localUrl": "./splats/Cruceiro_Da_Armada.spz"
   },
   {
     "name": "Vákner",
@@ -327,7 +327,7 @@
       "longitude": -9.112718,
       "isVisible": true
     },
-    "localUrl": "./splats/Vákner.ply"
+    "localUrl": "./splats/Vákner.spz"
   },
   {
     "name": "Cee no Camino ",
@@ -338,7 +338,7 @@
       "longitude": -9.188883,
       "isVisible": true
     },
-    "localUrl": "./splats/Cee_no_Camino_.ply"
+    "localUrl": "./splats/Cee_no_Camino_.spz"
   },
   {
     "name": "Caravana de Lys",
@@ -349,7 +349,7 @@
       "longitude": -9.127118,
       "isVisible": true
     },
-    "localUrl": "./splats/Caravana_de_Lys.ply"
+    "localUrl": "./splats/Caravana_de_Lys.spz"
   },
   {
     "name": "Abandoned House",
@@ -360,7 +360,7 @@
       "longitude": -8.84955,
       "isVisible": true
     },
-    "localUrl": "./splats/Abandoned_House.ply"
+    "localUrl": "./splats/Abandoned_House.spz"
   },
   {
     "name": "Vending Machine of Hope",
@@ -371,7 +371,7 @@
       "longitude": -8.861245,
       "isVisible": true
     },
-    "localUrl": "./splats/Vending_Machine_of_Hope.ply"
+    "localUrl": "./splats/Vending_Machine_of_Hope.spz"
   },
   {
     "name": "Stone House",
@@ -382,7 +382,7 @@
       "longitude": -8.911428,
       "isVisible": true
     },
-    "localUrl": "./splats/Stone_House.ply"
+    "localUrl": "./splats/Stone_House.spz"
   },
   {
     "name": "Corzon Grave",
@@ -393,7 +393,7 @@
       "longitude": -9.003261,
       "isVisible": true
     },
-    "localUrl": "./splats/Corzon_Grave.ply"
+    "localUrl": "./splats/Corzon_Grave.spz"
   },
   {
     "name": "Negreira",
@@ -404,7 +404,7 @@
       "longitude": -8.734015,
       "isVisible": true
     },
-    "localUrl": "./splats/Negreira.ply"
+    "localUrl": "./splats/Negreira.spz"
   },
   {
     "name": "Goal Obelisk",
@@ -415,7 +415,7 @@
       "longitude": -8.603352,
       "isVisible": true
     },
-    "localUrl": "./splats/Goal_Obelisk.ply"
+    "localUrl": "./splats/Goal_Obelisk.spz"
   },
   {
     "name": "Heavy Water Stone Bridge",
@@ -426,7 +426,7 @@
       "longitude": -8.650517,
       "isVisible": true
     },
-    "localUrl": "./splats/Heavy_Water_Stone_Bridge.ply"
+    "localUrl": "./splats/Heavy_Water_Stone_Bridge.spz"
   },
   {
     "name": "Cathedral Santiago Side",
@@ -437,7 +437,7 @@
       "longitude": -8.544755,
       "isVisible": true
     },
-    "localUrl": "./splats/Cathedral_Santiago_Side.ply"
+    "localUrl": "./splats/Cathedral_Santiago_Side.spz"
   },
   {
     "name": "Caga Tío ",
@@ -448,7 +448,7 @@
       "longitude": -8.573557,
       "isVisible": true
     },
-    "localUrl": "./splats/Caga_Tío_.ply"
+    "localUrl": "./splats/Caga_Tío_.spz"
   },
   {
     "name": "Sanatorio Psiquaitrico",
@@ -459,7 +459,7 @@
       "longitude": -8.556053,
       "isVisible": true
     },
-    "localUrl": "./splats/Sanatorio_Psiquaitrico.ply"
+    "localUrl": "./splats/Sanatorio_Psiquaitrico.spz"
   },
   {
     "name": "Compostela stairs ",
@@ -470,7 +470,7 @@
       "longitude": -8.546744,
       "isVisible": true
     },
-    "localUrl": "./splats/Compostela_stairs_.ply"
+    "localUrl": "./splats/Compostela_stairs_.spz"
   },
   {
     "name": "Padron Church",
@@ -481,7 +481,7 @@
       "longitude": -8.663168,
       "isVisible": true
     },
-    "localUrl": "./splats/Padron_Church.ply"
+    "localUrl": "./splats/Padron_Church.spz"
   },
   {
     "name": "Pontesures",
@@ -492,7 +492,7 @@
       "longitude": -8.649935,
       "isVisible": true
     },
-    "localUrl": "./splats/Pontesures.ply"
+    "localUrl": "./splats/Pontesures.spz"
   },
   {
     "name": "Pilgrim Statue",
@@ -503,7 +503,7 @@
       "longitude": -8.643285,
       "isVisible": true
     },
-    "localUrl": "./splats/Pilgrim_Statue.ply"
+    "localUrl": "./splats/Pilgrim_Statue.spz"
   },
   {
     "name": "Padron Square ",
@@ -514,7 +514,7 @@
       "longitude": -8.66089,
       "isVisible": true
     },
-    "localUrl": "./splats/Padron_Square_.ply"
+    "localUrl": "./splats/Padron_Square_.spz"
   },
   {
     "name": "Pontevedra Fountain",
@@ -525,7 +525,7 @@
       "longitude": -8.645078,
       "isVisible": true
     },
-    "localUrl": "./splats/Pontevedra_Fountain.ply"
+    "localUrl": "./splats/Pontevedra_Fountain.spz"
   },
   {
     "name": "Wooden Statues",
@@ -536,7 +536,7 @@
       "longitude": -8.649509,
       "isVisible": true
     },
-    "localUrl": "./splats/Wooden_Statues.ply"
+    "localUrl": "./splats/Wooden_Statues.spz"
   },
   {
     "name": "Albergue Pontevedra",
@@ -547,7 +547,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Albergue_Pontevedra.ply"
+    "localUrl": "./splats/Albergue_Pontevedra.spz"
   },
   {
     "name": "Memorial",
@@ -558,7 +558,7 @@
       "longitude": -8.607489,
       "isVisible": true
     },
-    "localUrl": "./splats/Memorial.ply"
+    "localUrl": "./splats/Memorial.spz"
   },
   {
     "name": "Horsey",
@@ -569,7 +569,7 @@
       "longitude": -8.643386,
       "isVisible": true
     },
-    "localUrl": "./splats/Horsey.ply"
+    "localUrl": "./splats/Horsey.spz"
   },
   {
     "name": "Jalopi ",
@@ -580,7 +580,7 @@
       "longitude": -8.801498,
       "isVisible": true
     },
-    "localUrl": "./splats/Jalopi_.ply"
+    "localUrl": "./splats/Jalopi_.spz"
   },
   {
     "name": "Piedras do Caminho",
@@ -591,7 +591,7 @@
       "longitude": -8.646369,
       "isVisible": true
     },
-    "localUrl": "./splats/Piedras_do_Caminho.ply"
+    "localUrl": "./splats/Piedras_do_Caminho.spz"
   },
   {
     "name": "Fountain Roundabout",
@@ -602,7 +602,7 @@
       "longitude": -8.760039,
       "isVisible": true
     },
-    "localUrl": "./splats/Fountain_Roundabout.ply"
+    "localUrl": "./splats/Fountain_Roundabout.spz"
   },
   {
     "name": "Salvation outpost ",
@@ -613,7 +613,7 @@
       "longitude": -8.781152,
       "isVisible": true
     },
-    "localUrl": "./splats/Salvation_outpost_.ply"
+    "localUrl": "./splats/Salvation_outpost_.spz"
   },
   {
     "name": "Fisherman Caminha",
@@ -624,7 +624,7 @@
       "longitude": -8.840359,
       "isVisible": true
     },
-    "localUrl": "./splats/Fisherman_Caminha.ply"
+    "localUrl": "./splats/Fisherman_Caminha.spz"
   },
   {
     "name": "Brunnen ",
@@ -635,7 +635,7 @@
       "longitude": -8.796052,
       "isVisible": true
     },
-    "localUrl": "./splats/Brunnen_.ply"
+    "localUrl": "./splats/Brunnen_.spz"
   },
   {
     "name": "Memory Grave",
@@ -646,7 +646,7 @@
       "longitude": -8.782017,
       "isVisible": true
     },
-    "localUrl": "./splats/Memory_Grave.ply"
+    "localUrl": "./splats/Memory_Grave.spz"
   },
   {
     "name": "Che Gue-bar-a",
@@ -657,7 +657,7 @@
       "longitude": -8.787865,
       "isVisible": true
     },
-    "localUrl": "./splats/Che_Gue-bar-a.ply"
+    "localUrl": "./splats/Che_Gue-bar-a.spz"
   },
   {
     "name": "Tememos",
@@ -668,7 +668,7 @@
       "longitude": -8.791096,
       "isVisible": true
     },
-    "localUrl": "./splats/Tememos.ply"
+    "localUrl": "./splats/Tememos.spz"
   },
   {
     "name": "Miguel Conch Tree",
@@ -679,7 +679,7 @@
       "longitude": -8.766686,
       "isVisible": true
     },
-    "localUrl": "./splats/Miguel_Conch_Tree.ply"
+    "localUrl": "./splats/Miguel_Conch_Tree.spz"
   },
   {
     "name": "Porto ángel ",
@@ -690,7 +690,7 @@
       "longitude": -8.658026,
       "isVisible": true
     },
-    "localUrl": "./splats/Porto_ángel_.ply"
+    "localUrl": "./splats/Porto_ángel_.spz"
   },
   {
     "name": "Fiddler",
@@ -701,7 +701,7 @@
       "longitude": -8.767694,
       "isVisible": true
     },
-    "localUrl": "./splats/Fiddler.ply"
+    "localUrl": "./splats/Fiddler.spz"
   },
   {
     "name": "Caxinas Brunnen",
@@ -712,7 +712,7 @@
       "longitude": -8.755635,
       "isVisible": true
     },
-    "localUrl": "./splats/Caxinas_Brunnen.ply"
+    "localUrl": "./splats/Caxinas_Brunnen.spz"
   },
   {
     "name": "Scare crow ",
@@ -723,7 +723,7 @@
       "longitude": -8.732053,
       "isVisible": true
     },
-    "localUrl": "./splats/Scare_crow_.ply"
+    "localUrl": "./splats/Scare_crow_.spz"
   },
   {
     "name": "Villa Cha",
@@ -734,7 +734,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Villa_Cha.ply"
+    "localUrl": "./splats/Villa_Cha.spz"
   },
   {
     "name": "Dunguaire Castle",
@@ -745,7 +745,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Dunguaire_Castle.ply"
+    "localUrl": "./splats/Dunguaire_Castle.spz"
   },
   {
     "name": "Utah Teapot",
@@ -756,7 +756,7 @@
       "longitude": -6.274311,
       "isVisible": true
     },
-    "localUrl": "./splats/Utah_Teapot.ply"
+    "localUrl": "./splats/Utah_Teapot.spz"
   },
   {
     "name": "Bear Statue",
@@ -767,7 +767,7 @@
       "longitude": -6.060603,
       "isVisible": true
     },
-    "localUrl": "./splats/Bear_Statue.ply"
+    "localUrl": "./splats/Bear_Statue.spz"
   },
   {
     "name": "Edgar",
@@ -778,7 +778,7 @@
       "longitude": -6.09509,
       "isVisible": true
     },
-    "localUrl": "./splats/Edgar.ply"
+    "localUrl": "./splats/Edgar.spz"
   },
   {
     "name": "Jaz",
@@ -789,7 +789,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Jaz.ply"
+    "localUrl": "./splats/Jaz.spz"
   },
   {
     "name": "Oscar Wilde ",
@@ -800,7 +800,7 @@
       "longitude": -6.250421,
       "isVisible": true
     },
-    "localUrl": "./splats/Oscar_Wilde_.ply"
+    "localUrl": "./splats/Oscar_Wilde_.spz"
   },
   {
     "name": "Turn table ",
@@ -811,7 +811,7 @@
       "longitude": -6.2551,
       "isVisible": true
     },
-    "localUrl": "./splats/Turn_table_.ply"
+    "localUrl": "./splats/Turn_table_.spz"
   },
   {
     "name": "Bog Jaz",
@@ -822,7 +822,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Bog_Jaz.ply"
+    "localUrl": "./splats/Bog_Jaz.spz"
   },
   {
     "name": "Chilling Video",
@@ -833,7 +833,7 @@
       "longitude": -6.3227,
       "isVisible": true
     },
-    "localUrl": "./splats/Chilling_Video.ply"
+    "localUrl": "./splats/Chilling_Video.spz"
   },
   {
     "name": "Popes Cross",
@@ -844,7 +844,7 @@
       "longitude": -6.339821,
       "isVisible": true
     },
-    "localUrl": "./splats/Popes_Cross.ply"
+    "localUrl": "./splats/Popes_Cross.spz"
   },
   {
     "name": "Chilling in the woods",
@@ -855,7 +855,7 @@
       "longitude": -6.274399,
       "isVisible": true
     },
-    "localUrl": "./splats/Chilling_in_the_woods.ply"
+    "localUrl": "./splats/Chilling_in_the_woods.spz"
   },
   {
     "name": "Water Castle Drone Test",
@@ -866,7 +866,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Water_Castle_Drone_Test.ply"
+    "localUrl": "./splats/Water_Castle_Drone_Test.spz"
   },
   {
     "name": "Castle With Selfie",
@@ -877,7 +877,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Castle_With_Selfie.ply"
+    "localUrl": "./splats/Castle_With_Selfie.spz"
   },
   {
     "name": "Turn Table 2 ",
@@ -888,7 +888,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Turn_Table_2_.ply"
+    "localUrl": "./splats/Turn_Table_2_.spz"
   },
   {
     "name": "Turn Table 1 ",
@@ -899,7 +899,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Turn_Table_1_.ply"
+    "localUrl": "./splats/Turn_Table_1_.spz"
   },
   {
     "name": "Ludwigsturm",
@@ -910,7 +910,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Ludwigsturm.ply"
+    "localUrl": "./splats/Ludwigsturm.spz"
   },
   {
     "name": "Žanito Haus",
@@ -921,7 +921,7 @@
       "longitude": 8.663158,
       "isVisible": true
     },
-    "localUrl": "./splats/Žanito_Haus.ply"
+    "localUrl": "./splats/Žanito_Haus.spz"
   },
   {
     "name": "Reduced Frames Drone Test",
@@ -932,7 +932,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Reduced_Frames_Drone_Test.ply"
+    "localUrl": "./splats/Reduced_Frames_Drone_Test.spz"
   },
   {
     "name": "Splat  Drone Mp4",
@@ -943,7 +943,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Splat_Drone_Mp4.ply"
+    "localUrl": "./splats/Splat_Drone_Mp4.spz"
   },
   {
     "name": "Police car",
@@ -954,7 +954,7 @@
       "longitude": 8.6417,
       "isVisible": true
     },
-    "localUrl": "./splats/Police_car.ply"
+    "localUrl": "./splats/Police_car.spz"
   },
   {
     "name": "Cursed bike ",
@@ -965,7 +965,7 @@
       "longitude": 8.643,
       "isVisible": true
     },
-    "localUrl": "./splats/Cursed_bike_.ply"
+    "localUrl": "./splats/Cursed_bike_.spz"
   },
   {
     "name": "Kessel",
@@ -976,7 +976,7 @@
       "longitude": 8.6613,
       "isVisible": true
     },
-    "localUrl": "./splats/Kessel.ply"
+    "localUrl": "./splats/Kessel.spz"
   },
   {
     "name": "Nord Teich",
@@ -987,7 +987,7 @@
       "longitude": 8.6661,
       "isVisible": true
     },
-    "localUrl": "./splats/Nord_Teich.ply"
+    "localUrl": "./splats/Nord_Teich.spz"
   },
   {
     "name": "Matze ",
@@ -998,7 +998,7 @@
       "longitude": 8.6619,
       "isVisible": true
     },
-    "localUrl": "./splats/Matze_.ply"
+    "localUrl": "./splats/Matze_.spz"
   },
   {
     "name": "Tip",
@@ -1009,7 +1009,7 @@
       "longitude": 8.6574,
       "isVisible": true
     },
-    "localUrl": "./splats/Tip.ply"
+    "localUrl": "./splats/Tip.spz"
   },
   {
     "name": "Videagog",
@@ -1020,7 +1020,7 @@
       "longitude": 8.6574,
       "isVisible": true
     },
-    "localUrl": "./splats/Videagog.ply"
+    "localUrl": "./splats/Videagog.spz"
   },
   {
     "name": "Pädagog",
@@ -1031,7 +1031,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Pädagog.ply"
+    "localUrl": "./splats/Pädagog.spz"
   },
   {
     "name": "Fountain video ",
@@ -1042,7 +1042,7 @@
       "longitude": 8.6581,
       "isVisible": true
     },
-    "localUrl": "./splats/Fountain_video_.ply"
+    "localUrl": "./splats/Fountain_video_.spz"
   },
   {
     "name": "Fountain 2",
@@ -1053,7 +1053,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Fountain_2.ply"
+    "localUrl": "./splats/Fountain_2.spz"
   },
   {
     "name": "Fountain #1",
@@ -1064,7 +1064,7 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Fountain_#1.ply"
+    "localUrl": "./splats/Fountain_#1.spz"
   },
   {
     "name": "Iinvisicube 7 ( Bigger  bigger scale) ",
@@ -1075,6 +1075,6 @@
       "longitude": 0,
       "isVisible": false
     },
-    "localUrl": "./splats/Iinvisicube_7_(_Bigger_bigger_scale)_.ply"
+    "localUrl": "./splats/Iinvisicube_7_(_Bigger_bigger_scale)_.spz"
   }
 ]

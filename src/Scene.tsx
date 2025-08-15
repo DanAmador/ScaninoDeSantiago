@@ -6,7 +6,6 @@ import type { SplatMesh as SparkSplatMesh } from '@sparkjsdev/spark'
 
 // spark-catalog.ts
 import { extend, ReactThreeFiber } from '@react-three/fiber'
-import type * as THREE from 'three'
 import {
   SparkRenderer as SparkRendererClass,
   SplatLoader,
@@ -14,26 +13,8 @@ import {
   SplatMesh as SplatMeshClass,
 } from '@sparkjsdev/spark'
 import { Cube } from './components/Cube'
+import { WebGLRenderer } from 'three'
 
-// 1) Register Spark classes in R3F's JSX catalog
-extend({ SparkRenderer: SparkRendererClass, SplatMesh: SplatMeshClass })
-
-// 2) Tell TypeScript about the new intrinsic elements
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      sparkRenderer: ReactThreeFiber.Object3DNode<
-        SparkRendererClass,
-        typeof SparkRendererClass
-      > & { renderer?: THREE.WebGLRenderer } // convenience prop if you don't use args
-
-      splatMesh: ReactThreeFiber.Object3DNode<SplatMeshClass, typeof SplatMeshClass> & {
-        url?: string
-        index?: number
-      }
-    }
-  }
-}
 type SplatLocation = {
   name: string
   latitude: number
@@ -57,29 +38,36 @@ function useParsedSplats(): ParsedSplat[] {
   }, [])
   return splats
 }
+// ensure this import runs once somewhere before render
+import './spark-catalog'
 
 export function Scene() {
-  const meshRef = useRef<any>(null)
-  const renderer = useThree((state) => state.gl)
-  const sparkRendererArgs = useMemo(() => {
-    return { renderer }
-  }, [renderer])
+  const gl = useThree((s) => s.gl)
+  const sparkArgs = useMemo(() => [{ renderer: gl }], [gl])
 
-  useFrame((_, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += 0.5 * delta
-    }
-  })
+  const splats = useParsedSplats()
 
   return (
     <>
       <CameraControls />
-      <sparkRenderer args={[sparkRendererArgs]}>
+      <sparkRenderer args={sparkArgs}>
         <group>
-          <splatMesh
-            ref={meshRef}
-            url='https://sparkjs.dev/assets/splats/butterfly.spz'
-          />
+          {splats
+            .filter((s) => s.location?.isVisible !== false)
+            .map((s, i) => {
+              // stagger a little so you can see multiple splats
+              const x = (i % 5) * 1.5
+              const z = -3 - Math.floor(i / 5) * 2
+              console.log(s.localUrl)
+              return (
+                <splatMesh
+                  key={s.name ?? s.localUrl ?? i}
+                  args={[{ url: s.localUrl }]} // <- important: constructor args
+                  quaternion={[1, 0, 0, 0]} // typical Spark orientation
+                  position={[x, 0, z]}
+                />
+              )
+            })}
         </group>
       </sparkRenderer>
     </>
