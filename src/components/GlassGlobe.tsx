@@ -1,19 +1,26 @@
 import React, { useRef, useEffect, useState, MutableRefObject } from 'react'
 import { Mesh, FrontSide, Box3, Vector3, DoubleSide, Box3Helper, Object3D } from 'three'
-import { SplatDataset } from '../useSplatData'
+import { SplatMetadata } from '../useSplatData'
 import { LumaSplatsThree } from '@lumaai/luma-web'
 import { extend, Object3DNode, useFrame } from '@react-three/fiber'
-import { CustomSplat } from "./LumaSplat"
+import { CustomSplat } from './LumaSplat'
 import { useHelper } from '@react-three/drei'
+import { ParsedSplat } from 'src/useSplatCycler'
+import { SplatMesh } from '@sparkjsdev/spark'
+import { SparkSplat } from './SparkSplat'
 
-export const GlassGlobe: React.FC<{ splat: SplatDataset }> = ({ splat }: { splat: SplatDataset }) => {
+export const GlassGlobe: React.FC<{ splat: ParsedSplat }> = ({
+  splat,
+}: {
+  splat: ParsedSplat
+}) => {
   const globeRef = useRef<Mesh>(null)
 
   return (
     <mesh ref={globeRef}>
       <sphereGeometry args={[splat?.ratio ?? 1, 32, 32]} />
       <meshPhysicalMaterial
-        color={"red"}
+        color={'red'}
         roughness={0}
         metalness={0.2}
         transmission={0.9} // Controls transparency effect (glass-like refraction)
@@ -30,17 +37,13 @@ export const GlassGlobe: React.FC<{ splat: SplatDataset }> = ({ splat }: { splat
   )
 }
 
-
-export const GlassGlobeWithLuma: React.FC<SplatDataset> = (
-  splat,
-) => {
-  const splatRef = useRef<LumaSplatsThree>(null)
-
+export const GlassGlobeWithLuma: React.FC<SplatMetadata> = (splat) => {
+  const splatRef = useRef<SplatMesh>(null)
 
   return (
     <group>
       <GlassGlobe splat={splat} />
-      <CustomSplat splat={splat} ref={splatRef} />
+      <SparkSplat splat={splat} ref={splatRef} />
     </group>
   )
 }

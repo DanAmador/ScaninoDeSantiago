@@ -1,83 +1,87 @@
-import { useState, useEffect, useRef } from 'react';
-
-export type SplatDataset = {
-    clip: { center: [number, number, number]; radius: number; };
-    offset: [number, number, number];
+import { useState, useEffect, useRef } from 'react'
+import { Vector3Like, Vector4Like } from 'three'
+import { ParsedSplat } from './useSplatCycler'
+export type SplatMetadata = {
+  clip: { center: [number, number, number]; radius: number }
+  transform: {
+    position: Vector3Like
+    rotation: Vector4Like // [x,y,z,w]
     scale: number
-    id: string, name: string, ratio: number
+  }
 }
-
+// useSplatDat.ts
 
 // Hook to read and update splats.json
 const useSplatData = (pollInterval = 5000) => {
-    const [splats, setSplats] = useState<SplatDataset[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+  const [splats, setSplats] = useState<ParsedSplat[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null)
 
-    // Store a reference to the current data for comparison later
-    const dataRef = useRef<SplatDataset[]>(splats);
+  const dataRef = useRef<ParsedSplat[]>(splats)
 
-    // Function to fetch data
-    const fetchData = async () => {
-        try {
-            const response = await fetch('/splats.json');
-            if (!response.ok) {
-                throw new Error('Failed to fetch splats.json');
-            }
-            const result: SplatDataset[] = await response.json();
+  const fetchData = async () => {
+    try {
+      const response = await fetch('/splats.json', { cache: 'no-store' })
+      if (!response.ok) throw new Error('Failed to fetch splats.json')
+      const result: ParsedSplat[] = await response.json()
 
-            // Only update if the data has changed
-            if (JSON.stringify(result) !== JSON.stringify(dataRef.current)) {
-                setSplats(result);
-                dataRef.current = result;
-            }
-            setLoading(false);
-        } catch (error: any) {
-            setError(error.message);
-            setLoading(false);
-        }
-    };
+      if (JSON.stringify(result) !== JSON.stringify(dataRef.current)) {
+        setSplats(result)
+        dataRef.current = result
+      }
+      setLoading(false)
+    } catch (e: any) {
+      setError(e.message ?? 'Failed to load data')
+      setLoading(false)
+    }
+  }
 
-    // Initial data load
-    useEffect(() => {
-        fetchData(); // Load data on initial render
+  useEffect(() => {
+    fetchData()
+    const id = setInterval(fetchData, pollInterval)
+    return () => clearInterval(id)
+  }, [pollInterval])
 
-        // Set up polling to check for changes
-        const intervalId = setInterval(() => {
-            fetchData();
-        }, pollInterval);
+  // Require localUrl and accept partial patch (including nested clip/transform)
+  const updateSplat = async (
+    patch: Partial<ParsedSplat> & Pick<ParsedSplat, 'localUrl'>
+  ) => {
+    try {
+      const response = await fetch('/api/update', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(patch),
+      })
+      if (!response.ok) {
+        const msg = await response.text()
+        throw new Error(msg || 'Failed to update the splat')
+      }
 
-        // Cleanup the interval when the component unmounts
-        return () => clearInterval(intervalId);
-    }, [pollInterval]);
+      const { updatedEntry } = await response.json()
 
-    // Method to update the data
-    const updateSplat = async (updatedSplat: Partial<SplatDataset>) => {
-        try {
-            const response = await fetch('/api/update', {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(updatedSplat),
-            });
+      // Replace the updated item with server's merged version
+      setSplats((prev) => {
+        const next = prev.map((s) =>
+          s.localUrl === updatedEntry.localUrl ? updatedEntry : s
+        )
+        dataRef.current = next
+        return next
+      })
 
-            if (!response.ok) {
-                throw new Error('Failed to update the splat');
-            }
+      return updatedEntry as ParsedSplat
+    } catch (e: any) {
+      setError(e.message ?? 'Failed to update the splat')
+      throw e
+    }
+  }
 
-            // Optionally, you can update the state here as well
-            const updatedData = splats.map((splat) =>
-                splat.id === updatedSplat.id ? { ...splat, ...updatedSplat } : splat
-            );
-            setSplats(updatedData);
-            dataRef.current = updatedData; // Update the reference data as well
-        } catch (error: any) {
-            setError(error.message);
-        }
-    };
+  // Optional helper: update just metadata
+  const updateSplatMetadata = async (
+    localUrl: string,
+    meta: Partial<NonNullable<Pick<ParsedSplat, 'clip' | 'transform'>>>
+  ) => updateSplat({ localUrl, ...meta })
 
-    return { splats, updateSplat, loading, error };
-};
+  return { splats, updateSplat, updateSplatMetadata, reload: fetchData, loading, error }
+}
 
-export default useSplatData;
+export default useSplatData

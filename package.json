@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "nodemon scripts/server.cjs",
     "build": "tsc && vite build",
     "splats:compress": "node scripts/compress-all-splats.mjs",
     "preview": "vite preview"
@@ -20,6 +21,7 @@
     "leva": "^0.10.0",
     "mapbox-gl": "^3.14.0",
     "maplibre-gl": "^5.6.2",
+    "nodemon": "^3.1.10",
     "r3f-perf": "^7.2.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

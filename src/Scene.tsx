@@ -1,75 +1,47 @@
 // Scene.tsx
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { CameraControls } from '@react-three/drei'
-import { useThree, useFrame } from '@react-three/fiber'
-import type { SplatMesh as SparkSplatMesh } from '@sparkjsdev/spark'
+import { useMemo } from 'react'
+import { CameraControls, Html, Sphere } from '@react-three/drei'
+import { useThree } from '@react-three/fiber'
 
-// spark-catalog.ts
-import { extend, ReactThreeFiber } from '@react-three/fiber'
-import {
-  SparkRenderer as SparkRendererClass,
-  SplatLoader,
-  SplatMesh,
-  SplatMesh as SplatMeshClass,
-} from '@sparkjsdev/spark'
-import { Cube } from './components/Cube'
-import { WebGLRenderer } from 'three'
-
-type SplatLocation = {
-  name: string
-  latitude: number
-  longitude: number
-  isVisible: boolean
-}
-
-export type ParsedSplat = {
-  name: string
-  date: string
-  location: SplatLocation
-  localUrl: string
-}
-
-function useParsedSplats(): ParsedSplat[] {
-  const [splats, setSplats] = useState<ParsedSplat[]>([])
-  useEffect(() => {
-    fetch('/parsed_splats.json')
-      .then((r) => r.json())
-      .then(setSplats)
-  }, [])
-  return splats
-}
-// ensure this import runs once somewhere before render
 import './spark-catalog'
+import { ParsedSplat, useParsedSplats, useSplatCycler } from './useSplatCycler'
+import { useSplatControls } from './useSplatMetadataControls'
+import { SparkSplat } from './components/SparkSplat'
+import useSplatData from './useSplatData'
 
 export function Scene() {
   const gl = useThree((s) => s.gl)
   const sparkArgs = useMemo(() => [{ renderer: gl }], [gl])
 
   const splats = useParsedSplats()
-
+  const { current, index, count } = useSplatCycler(splats)
+  const { updateSplat } = useSplatData()
+  useSplatControls(current, (updatedSplat) => {
+    updateSplat(updatedSplat as any)
+  })
   return (
     <>
       <CameraControls />
       <sparkRenderer args={sparkArgs}>
-        <group>
-          {splats
-            .filter((s) => s.location?.isVisible !== false)
-            .map((s, i) => {
-              // stagger a little so you can see multiple splats
-              const x = (i % 5) * 1.5
-              const z = -3 - Math.floor(i / 5) * 2
-              console.log(s.localUrl)
-              return (
-                <splatMesh
-                  key={s.name ?? s.localUrl ?? i}
-                  args={[{ url: s.localUrl }]} // <- important: constructor args
-                  quaternion={[1, 0, 0, 0]} // typical Spark orientation
-                  position={[x, 0, z]}
-                />
-              )
-            })}
-        </group>
+        <Sphere></Sphere>
+        <group>{current && <SparkSplat splat={current} />}</group>
       </sparkRenderer>
+
+      {/* tiny HUD */}
+      <Html position={[0, 1.5, -2.5]}>
+        <div
+          style={{
+            padding: 8,
+            background: 'rgba(0,0,0,0.5)',
+            color: '#fff',
+            borderRadius: 8,
+          }}
+        >
+          {count
+            ? `Splat ${index + 1}/${count} — press Enter for next, Backspace for previous`
+            : 'Loading…'}
+        </div>
+      </Html>
     </>
   )
 }

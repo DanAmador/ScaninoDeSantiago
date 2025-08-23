@@ -16,4 +16,10 @@ export default defineConfig({
     exclude: ['@sparkjsdev/spark'], // keep Spark unbundled → preserves import.meta.url
   },
   assetsInclude: ['**/*.wasm', '**/*.spz', '**/*.ply'],
+  server: {
+    proxy: {
+      '/api': { target: 'http://localhost:5000', changeOrigin: true },
+    },
+  },
+});
 })
